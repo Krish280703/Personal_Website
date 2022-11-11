@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Software Developer</title>
+    <link rel="stylesheet" href="ContactMeStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="ABOUT_ME.html">ABOUT ME</a></li>
+                    <li><a href="RESUME.html">RESUME</a></li>
+                    <li><a href="PORTFOLIO.html">PORTFOLIO</a></li>
+                    <li><a href="BLOG.html">BLOG</a></li>
+                    <li><a href="CONTACT_ME.html">CONTACT ME</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="container  text-center">
+            <div class="ABOUT">
+                <h1>CONTACT ME</h1>
+                <p>OPEN TO WORK</p>
+            </div>
+        </div>
+
+        <div class="container  text-center">
+            <div class="contact-form">
+                <form id="contact-form" method="post" action="https://formsubmit.co/krish280703@gmail.com">
+                    <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+
+                    <input name="emial" type="email" class="form-control" placeholder="Your Email" required><br>
+                    <!---NEED TO PUT DOMIAN-->
+                    <input type="hidden" name="_next" value="https://krishpatel2807.netlify.app//thankyou.html">
+                    <input type="hidden" name="_subject" value="EMAIL FROM WEBSITE!">
+
+                    <textarea name="message" class="form-control" placeholder="Message" rows="4"
+                        required></textarea><br>
+
+                    <input type="submit" class="form-control submit" value="SEND MESSAGE">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!----javaScript for Toggle menu----->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+</body>
+
+</html>
